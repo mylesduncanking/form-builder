@@ -141,6 +141,8 @@ Checkbox | `<input type="checkbox">` | [Options](#checkbox-specific-options)
 Radio    | `<input type="radio">`    | [Options](#radio-specific-options)
 Hidden   | `<input type="hidden">`   |
 File     | `<input type="file">`     | [Options](#file-specific-options)
+Tel      | `<input type="tel">`      |
+Button   | `<input type="button">`   |
 Select   | `<select></select>`       | [Options](#select-specific-options)
 Textarea | `<textarea></textarea>`   |
 
@@ -187,12 +189,12 @@ Textarea | `<textarea></textarea>`   |
 #### Generic options
 Option | Details | Default
 ------ | ------- | -------
-placeholder  | Placeholder for form field if available | Will match label
-col          | Class to be added to column wrapper     | `col-md-6`
-field-class  | Class to be added to field              | `form-control` 
-addon-before | Addon before content                    | `null` 
 addon-after  | Addon after content                     | `null`
+addon-before | Addon before content                    | `null` 
+col          | Class to be added to column wrapper     | `col-md-6`
 disabled     | Is the field disabled?                  | `false`
+field-class  | Class to be added to field              | `form-control` 
+placeholder  | Placeholder for form field if available | Will match label
 
 #### Checkbox specific options
 Option | Details | Default
@@ -207,20 +209,21 @@ checked | Check box or not | `false`
 #### Number specific options
 Option | Details | Default
 ------ | ------- | -------
-min  | Min number to go to          | `null`
 max  | Max number to go to          | `null`
+min  | Min number to go to          | `null`
 step | Amount to increment value by | `null`
 
 #### File specific options
 Option | Details | Default
 ------ | ------- | -------
-multiple | Allow multiple      | `false`
 accept   | Extensions to allow | `null`
+multiple | Allow multiple      | `false`
 
 #### Select specific options
 Option | Details | Default
 ------ | ------- | -------
-options | Options to display in select | `array()`
+multiple | Allow multiple               | `false`
+options  | Options to display in select | `array()`
 
 ---
 
