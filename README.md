@@ -65,14 +65,14 @@ class  | Class to be applied | `null`
 ```html
 <!-- FormBuilder::outputText('first_name'); -->
 <div class="col-md-6">
-    <input type="text" name="first_name">
+    <input type="text" name="first_name" class="form-control">
 </div>
 
 <!-- FormBuilder::outputText('first_name', 'First name'); -->
 <div class="col-md-6">
     <div class="form-group">
         <label>First name</label>
-        <input type="text" name="first_name" placeholder="First name">
+        <input type="text" name="first_name" placeholder="First name" class="form-control">
     </div>
 </div>
 
@@ -80,7 +80,7 @@ class  | Class to be applied | `null`
 <div class="col-md-6">
     <div class="form-group">
         <label>First name</label>
-        <input type="text" name="first_name" placeholder="First name" value="Bill">
+        <input type="text" name="first_name" placeholder="First name" value="Bill" class="form-control">
     </div>
 </div>
 
@@ -88,7 +88,7 @@ class  | Class to be applied | `null`
 <div class="col-md-6">
     <div class="form-group">
         <label>First name</label>
-        <input type="text" name="first_name" placeholder="First name" required="required" aria-required="required">
+        <input type="text" name="first_name" placeholder="First name" required="required" aria-required="required" class="form-control">
     </div>
 </div>
 
@@ -103,7 +103,7 @@ FormBuilder::outputText('email', 'Email address', null, false, [
     <div class="form-group">
         <label>Email address</label>
         <div class="input-group">
-            <input type="text" name="email" placeholder="Please enter your email address">
+            <input type="text" name="email" placeholder="Please enter your email address" class="form-control">
             <span class="input-group-addon">@domain.com</span>
         </div>
     </div>
@@ -188,6 +188,7 @@ Option | Details | Default
 ------ | ------- | -------
 placeholder  | Placeholder for form field if available | Will match label
 col          | Class to be added to column wrapper     | `col-md-6`
+field-class  | Class to be added to field              | `form-control` 
 addon-before | Addon before content                    | `null` 
 addon-after  | Addon after content                     | `null`
 
