@@ -1,4 +1,9 @@
 # Form Builder
+
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mylesduncanking/form-builder/badges/quality-score.png)](https://scrutinizer-ci.com/g/mylesduncanking/form-builder)
+[![Build Status](https://scrutinizer-ci.com/g/mylesduncanking/form-builder/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mylesduncanking/form-builder/build-status/master)
+
 - [Installation](#installation)
 - [Opening and closing a form](#open-and-close)
 - [Usage](#usage)
