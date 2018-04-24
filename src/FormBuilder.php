@@ -10,5 +10,9 @@ namespace mylesduncanking\FormBuilder;
 
 class FormBuilder
 {
-    
+    // Output closing form tag
+    public function close()
+    {
+        echo '</form>';
+    }
 }
