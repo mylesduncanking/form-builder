@@ -19,14 +19,15 @@
 
 <!--
 FormBuilder::open('POST', 'foo/bar', true, [
-    'class' => 'form-horizontal'
+    'class' => 'form form-horizontal'
 ]);
 -->
-<form action="foo/bar" method="POST" enctype="multipart/form-data" class="form-horizontal">
+<form action="foo/bar" method="POST" enctype="multipart/form-data" class="form form-horizontal">
 
 <!-- FormBuilder::close(); -->
 </form>
 ```
+
 ### Open and close breakdown
 `FormBuilder::open(`[Method](#method)`, `[Action](#action)`, `[Files](#files)`, `[Options](#open-options)`);`
 
@@ -35,20 +36,20 @@ FormBuilder::open('POST', 'foo/bar', true, [
 #### Method
 **Description:** Type of method to process form  
 **Required:** No  
-**Default:** `POST`
+**Default:** `POST`  
 **Type:** String  
 
 #### Action
 **Description:** URL to send submitted form to  
 **Required:** No  
-**Default:** `null`
-**Type:** String
+**Default:** `null`  
+**Type:** String  
 
 #### Files
-**Description:** Does the form have a file upload within it?
+**Description:** Does the form have a file upload within it?  
 **Required:** No  
-**Default:** `false`
-**Type:** Boolean
+**Default:** `false`  
+**Type:** Boolean  
 
 #### Open options
 **Description:** Additonal options which can be applied to the form tag  
@@ -134,7 +135,7 @@ build  | Return the HTML
 Option   | Details                   | Specific options
 ------   | -------                   | ----------------
 Text     | `<input type="text">`     |
-Number   | `<input type="number">`   |
+Number   | `<input type="number">`   | [Options](#number-specific-options)
 Email    | `<input type="email">`    |
 Checkbox | `<input type="checkbox">` |
 Radio    | `<input type="radio">`    |
@@ -189,6 +190,12 @@ placeholder  | Placeholder for form field if available | Will match label
 col          | Class to be added to column wrapper     | `col-md-6`
 addon-before | Addon before content                    | `null` 
 addon-after  | Addon after content                     | `null`
+
+#### Number specific options
+Option | Details | Default
+------ | ------- | -------
+min | Min number to go to | `null`
+max | Max number to go to | `null`
 
 #### Select specific options
 Option | Details | Default
