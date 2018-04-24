@@ -137,9 +137,10 @@ Option   | Details                   | Specific options
 Text     | `<input type="text">`     |
 Number   | `<input type="number">`   | [Options](#number-specific-options)
 Email    | `<input type="email">`    |
-Checkbox | `<input type="checkbox">` |
-Radio    | `<input type="radio">`    |
+Checkbox | `<input type="checkbox">` | [Options](#checkbox-specific-options)
+Radio    | `<input type="radio">`    | [Options](#radio-specific-options)
 Hidden   | `<input type="hidden">`   |
+File     | `<input type="file">`     | [Options](#file-specific-options)
 Select   | `<select></select>`       | [Options](#select-specific-options)
 Textarea | `<textarea></textarea>`   |
 
@@ -191,12 +192,30 @@ col          | Class to be added to column wrapper     | `col-md-6`
 field-class  | Class to be added to field              | `form-control` 
 addon-before | Addon before content                    | `null` 
 addon-after  | Addon after content                     | `null`
+disabled     | Is the field disabled?                  | `false`
+
+#### Checkbox specific options
+Option | Details | Default
+------ | ------- | -------
+checked | Check box or not | `false`
+
+#### Radio specific options
+Option | Details | Default
+------ | ------- | -------
+checked | Check box or not | `false`
 
 #### Number specific options
 Option | Details | Default
 ------ | ------- | -------
-min | Min number to go to | `null`
-max | Max number to go to | `null`
+min  | Min number to go to          | `null`
+max  | Max number to go to          | `null`
+step | Amount to increment value by | `null`
+
+#### File specific options
+Option | Details | Default
+------ | ------- | -------
+multiple | Allow multiple      | `false`
+accept   | Extensions to allow | `null`
 
 #### Select specific options
 Option | Details | Default
